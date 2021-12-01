@@ -201,18 +201,38 @@
 </section>
 
 
-    <!--
-      Модальное окно для полноразмерного изображения
-      Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
-    -->
+    <!-- Модальное окно -->
     <div class="lightbox js-lightbox">
-      <div class="lightbox__overlay"></div>
+      <div class="container">
+  <div class="container-form">
+    <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
 
-      <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
+    <p>Заказать онлайн</p>
+    <form class="form">
+      <div>
+        <label class="label" for="name">Ваше имя</label>
+        <input class="input" id="name" name="name" type="text" placeholder="Ваше имя" required="">
+      </div>
+      <div>
+        <label class="label" for="telefon">Телефон (в формате: 0990098519)</label>
+        <input class="input" id="telefon" name="telefon" type="tel" placeholder="Телефон 099 009 85 19" pattern="[0-9]{10}" required="">
+      </div>
+      <div>
+        <label class="label" for="text">Ваш заказ </label>
+        <input class="input" id="text" type="text" name="text" placeholder=" ">
+      </div>
+
+      <button class="buttonForm" type="submit">Отправить анкету</button>
+    </form>
+
+    <div class="post">Ваше сообшение отправлено. В ближайшее время мы с вами свяжемся!</div>
+  </div>
+</div>
+
     </div>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-    <script src="/src.e31bb0bc.js"></script>
     <script src="/app.c3f9f951.js"></script>
+    <script src="/src.e31bb0bc.js"></script>
+    <script src="/form.90d872a0.js"></script>
   </body>
 </html>
