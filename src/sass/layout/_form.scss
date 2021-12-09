@@ -48,9 +48,21 @@
 }
 
 .container-form {
-  position: relative;
+  position: fixed;
+  top: 20px;
+  right: 10px;
+  bottom: 20px;
+  left: 10px;
+  z-index: 1000;
+  overflow-y: scroll;
   padding: 40px 25px 30px 25px;
   background-color: var(--background-color);
+  border-radius: 10px;
+  @media screen and (min-width: 720px) {
+    width: 500px;
+    max-height: 700px;
+    margin: 0 auto;
+  }
 }
 .form-titel {
   margin-top: 10px;
@@ -116,7 +128,7 @@
   cursor: pointer;
   border: none;
   color: white;
-  padding: 12px 10px;
+  padding: 12px 15px;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -149,9 +161,9 @@
 .newPost {
   display: block;
   text-align: center;
-  margin-top: 30px;
-  font-size: 21px;
-  font-weight: 700;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
 }
 .notForm {
   display: none;

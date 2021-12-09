@@ -2,8 +2,8 @@
   <div class="container-form">
     <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
 
-    <h2 class="form-titel">Форма заказа торта</h2>
     <form class="form" autocomplete="on">
+      <h2 class="form-titel">Форма заказа торта</h2>
       <div>
         <label class="label" for="name">Ваше Имя</label>
         <input
@@ -31,7 +31,7 @@
       <div>
         <label class="label" for="date">На какую дату и время нужен торт? </label>
         <input class="input input-date" id="date" type="date" name="date" />
-        <input class="input input-time" id="date" type="time" name="time" />
+        <input class="input input-time" id="time" type="time" name="time" />
         <script>
           document.getElementById('date').value = new Date().toISOString().substring(0, 10);
         </script>
@@ -89,11 +89,12 @@
       </div>
 
       <button class="buttonForm" type="submit">Отправить анкету</button>
-    </form>
-    <p class="text">
-      *Любой декор, включая живые цветы, не входит в стоимость торта и оплачивается отдельно.
-    </p>
 
-    <div class="post">Ваш заказ принят. В ближайшее время мы с вами свяжемся!</div>
+      <p class="text">
+        *Любой декор, включая живые цветы, не входит в стоимость торта и оплачивается отдельно.
+      </p>
+    </form>
+
+    <div class="post">Спасибо! Ваш заказ принят. В ближайшее время мы с вами свяжемся!</div>
   </div>
 </div>
