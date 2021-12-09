@@ -62,7 +62,7 @@
     select:focus,
     textarea:focus,
     input:focus {
-      font-size: 16px;
+      font-size: 14px;
     }
   }
   @media screen and (min-width: 720px) {
@@ -109,26 +109,28 @@
 
 .weight,
 .filling {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .filling {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: start;
   align-items: baseline;
 }
 
 .filling-select {
-  width: 150px;
-  max-width: 100%;
+  width: 100px;
+  max-width: 170px;
+  margin-left: 10px;
   margin-top: 5px;
   background: none;
   outline: none;
 }
 .weight-input {
-  margin-left: 20px;
-  width: 40px;
+  margin-left: 10px;
+  width: 35px;
+  max-width: 80px;
 }
 
 .buttonForm {

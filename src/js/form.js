@@ -20,7 +20,7 @@ form.addEventListener('submit', e => {
   Время: ${time.value},
   Какой праздник: ${holiday.value},
   Какой декор: ${cake.value},
-  Картинкна: ${pick.files},
+  Картинкна: ${pick.files[0]},
   Вес торта: ${weight.value},
 Начинка торта: ${filling.value}
   `;
