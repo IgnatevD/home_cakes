@@ -9,7 +9,7 @@ const post = document.querySelector('.post');
 form.addEventListener('submit', e => {
   e.preventDefault();
   const {
-    elements: { name, telefon, date, holiday, cake, pick, weight, filling },
+    elements: { name, telefon, date, time, holiday, cake, pick, weight, filling },
   } = e.currentTarget;
   console.log(pick.files);
   const mes = `
@@ -17,6 +17,7 @@ form.addEventListener('submit', e => {
   Имя: ${name.value},
   Телефон: ${telefon.value},
   Дата: ${date.value},
+  Время: ${time.value},
   Какой праздник: ${holiday.value},
   Какой декор: ${cake.value},
   Картинкна: ${pick.files},
