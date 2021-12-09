@@ -49,23 +49,31 @@
 
 .container-form {
   position: relative;
-  padding: 40px 20px 30px 20px;
-  background-color: #fff;
+  padding: 40px 25px 30px 25px;
+  background-color: var(--background-color);
 }
-
+.form-titel {
+  margin-top: 10px;
+  text-align: center;
+}
 .input {
   width: 100%;
-  margin-top: 10px;
   border: none;
+  background: none;
   padding: 5px 0px;
   font-size: 14px;
-  border-bottom: 2px solid #bdbdbd;
+  border-bottom: 2px solid var(--button-stars-color);
   outline: none;
 }
 
+.input-date {
+  width: 120px;
+}
+
 .label {
-  display: none;
-  color: #bdbdbd;
+  display: block;
+  margin-top: 20px;
+  color: var(--button-stars-color);
   cursor: text;
 }
 
@@ -73,12 +81,39 @@
 .input:active {
   border-bottom: 2px solid #212121;
 }
+.input-file {
+  margin-top: 5px;
+}
+
+.weight,
+.filling {
+  margin-top: 15px;
+}
+
+.filling {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.filling-select {
+  width: 150px;
+  max-width: 100%;
+  margin-top: 5px;
+  background: none;
+  outline: none;
+}
+.weight-input {
+  margin-left: 20px;
+  width: 40px;
+}
 
 .buttonForm {
   cursor: pointer;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 12px 10px;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -92,16 +127,17 @@
 
   background: none;
 
-  background-color: #008cba;
-  color: white;
+  background-color: var(--button-stars-color);
+  color: var(--registration-background-color);
 
-  border: 2px solid #008cba;
-  border-radius: 15px;
+  border: 2px solid var(--button-hover-color);
+  border-radius: 25px;
 }
 
 .buttonForm:hover {
-  background-color: white;
-  color: #008cba;
+  background-color: var(--registration-background-color);
+  color: var(--button-stars-color);
+  border: 2px solid var(--button-stars-color);
 }
 
 .post {
@@ -110,10 +146,15 @@
 .newPost {
   display: block;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 30px;
   font-size: 21px;
   font-weight: 700;
 }
 .notForm {
   display: none;
+}
+
+.text {
+  margin-top: 20px;
+  text-align: center;
 }

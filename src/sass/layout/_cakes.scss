@@ -2,7 +2,11 @@
   text-align: center;
   margin-bottom: 20px;
 }
-
+.list-cakes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 .item-cakes {
   width: 100%;
   max-width: 300px;

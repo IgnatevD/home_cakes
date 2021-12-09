@@ -23,7 +23,3 @@ function multiply() {
 
   return total;
 }
-
-console.log(multiply(1, 2, 3)); //  6
-console.log(multiply(1, 2, 3, 4)); //  10
-console.log(multiply(1, 2, 3, 4, 5)); //  15

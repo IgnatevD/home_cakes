@@ -20,7 +20,7 @@
   </div>
 </section>
 
-    <section class="section">
+    <section class="section-about">
   <div class="container">
     <div class="containe-img">
       <img class="img-my-foto" src="/Angelina@2x.276850be.webp" alt="Angelina">
@@ -225,42 +225,37 @@
   <div class="container-form">
     <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
 
-    <p>Заказать онлайн</p>
+    <h2 class="form-titel">Форма заказа торта</h2>
     <form class="form">
       <div>
-        <label class="label" for="name">Ваше имя</label>
-        <input class="input" id="name" name="name" type="text" placeholder="Ваше имя" required="">
+        <label class="label" for="name">Ваше Имя</label>
+        <input class="input" id="name" name="name" type="text" placeholder="Ангелина" required="">
       </div>
       <div>
         <label class="label" for="telefon">Телефон (в формате: 0990098519)</label>
-        <input class="input" id="telefon" name="telefon" type="tel" placeholder="Телефон 099 009 85 19" pattern="[0-9]{10}" required="">
+        <input class="input" id="telefon" name="telefon" type="tel" placeholder="0990098519" pattern="[0-9]{10}" required="">
       </div>
       <div>
         <label class="label" for="date">На какую дату нужен торт? </label>
-        <input class="input" id="date" type="date" name="text" value="Выберите дату" placeholder="На какую дату нужен торт?">
+        <input class="input input-date" id="date" type="date" name="text" value="2022">
       </div>
       <div>
         <label class="label" for="holiday">Какой праздник в этот день? </label>
-        <input class="input" id="holiday" type="text" name="text" placeholder="Какой праздник в этот день?">
+        <input class="input" id="holiday" type="text" name="text" placeholder="День рождение ребенка 5 лет">
       </div>
       <div>
         <label class="label" for="cake">Какой декор будет на тортике? </label>
-        <input class="input" id="cake" type="text" name="text" placeholder=" ">
+        <input class="input" id="cake" type="text" name="text" placeholder="Cферы, фигурки из мастики">
+        <input class="input-file" id="pick" type="file" multiple="multiple">
       </div>
-      <p>
-        <select name="list1">
-          <option>Какой вес торта? (150-200 гр/чел)</option>
-          <option>1,5 (минимальный)</option>
-          <option>2</option>
-          <option>2,5</option>
-          <option>3</option>
-          <option>3,5</option>
-          <option>большой торт</option>
-        </select>
-      </p>
-      <p>
-        <select name="list2">
-          <option>Какая начинка торта?</option>
+
+      <div class="weight">
+        <label for="weight"> Вес торта? (150-200 гр/чел) </label>
+        <input type="number" name="weight" id="weight" class="weight-input input" value="1.5" min="1.5" max="10" step="0.5">
+      </div>
+      <div class="filling">
+        <label for="filling"> Начинка торта?</label>
+        <select id="filling" name="filling" class="filling-select">
           <option>Неженка</option>
           <option>Black cherry</option>
           <option>Pina Colada</option>
@@ -272,13 +267,15 @@
           <option>Груша - дор блю</option>
           <option>Фисташка-малина</option>
         </select>
-      </p>
+      </div>
 
       <button class="buttonForm" type="submit">Отправить анкету</button>
     </form>
-    <p>Любой декор, включая живые цветы, не входит в стоимость торта и оплачивается отдельно.</p>
+    <p class="text">
+      *Любой декор, включая живые цветы, не входит в стоимость торта и оплачивается отдельно.
+    </p>
 
-    <div class="post">Ваше сообшение отправлено. В ближайшее время мы с вами свяжемся!</div>
+    <div class="post">Ваш заказ принят. В ближайшее время мы с вами свяжемся!</div>
   </div>
 </div>
 

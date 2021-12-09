@@ -9,14 +9,20 @@ const post = document.querySelector('.post');
 form.addEventListener('submit', e => {
   e.preventDefault();
   const {
-    elements: { name, telefon, text },
+    elements: { name, telefon, date, holiday, cake, pick, weight, filling },
   } = e.currentTarget;
-
+  console.log(pick.files);
   const mes = `
   Заказ торта!
   Имя: ${name.value},
   Телефон: ${telefon.value},
-  Дополнительная информация: ${text.value}`;
+  Дата: ${date.value},
+  Какой праздник: ${holiday.value},
+  Какой декор: ${cake.value},
+  Картинкна: ${pick.files},
+  Вес торта: ${weight.value},
+Начинка торта: ${filling.value}
+  `;
 
   fetch(`${url}${mes}`);
 
