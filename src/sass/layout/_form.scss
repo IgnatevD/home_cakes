@@ -92,6 +92,7 @@
   background: none;
   padding: 5px 0px;
   font-size: 14px;
+  color: var(--text-headers-color);
   border-bottom: 2px solid var(--button-stars-color);
   outline: none;
 }
@@ -150,6 +151,7 @@
   margin-left: 10px;
   width: 45px;
   max-width: 80px;
+  color: var(--text-headers-color);
 }
 .radio-button {
   display: flex;
@@ -158,6 +160,7 @@
 }
 .radio-input {
   margin-right: 5px;
+  color: var(--text-headers-color);
 }
 .radio-label {
   margin-top: 10px;
