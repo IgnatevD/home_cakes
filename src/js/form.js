@@ -14,7 +14,7 @@ form.addEventListener('submit', e => {
   } = e.currentTarget;
   console.log(pick.files);
   const mes = `
-  Заказ торта!
+  Заказ торта! ➡
   Имя: ${name.value},
   Телефон: ${telefon.value},
   Дата: ${date.value},
@@ -23,8 +23,8 @@ form.addEventListener('submit', e => {
   Какой декор: ${cake.value},
   Картинкна: ${pick.files},
   Вес торта: ${weight.value},
-Начинка торта: ${filling.value}
-Адресс: ${delivery.value}, ${adress.value}
+  Начинка торта: ${filling.value},
+  Адресс: ${delivery.value}, ${adress.value}
   `;
 
   fetch(`${url}${mes}`);
