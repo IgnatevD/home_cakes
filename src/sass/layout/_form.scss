@@ -55,7 +55,7 @@
   left: 10px;
   z-index: 1000;
   overflow-y: scroll;
-  padding: 40px 25px 30px 25px;
+  padding: 40px 20px 30px 20px;
   background-color: var(--background-color);
   border-radius: 10px;
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -71,6 +71,16 @@
     margin: 0 auto;
   }
 }
+.conteiner-div {
+  margin-top: 15px;
+}
+.input-div {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: start;
+}
+
 .form-titel {
   margin-top: 10px;
   text-align: center;
@@ -93,8 +103,7 @@
   margin-left: 20px;
 }
 .label {
-  display: block;
-  margin-top: 20px;
+  display: inline-block;
   color: var(--button-stars-color);
   cursor: text;
 }
@@ -103,6 +112,15 @@
 .input:active {
   border-bottom: 2px solid #212121;
 }
+
+.input-name {
+  width: 100%;
+  margin-left: 10px;
+}
+.label-name {
+  width: 100px;
+}
+
 .input-file {
   margin-top: 5px;
 }
@@ -129,8 +147,23 @@
 }
 .weight-input {
   margin-left: 10px;
-  width: 35px;
+  width: 45px;
   max-width: 80px;
+}
+.radio-button {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.radio-input {
+  margin-right: 5px;
+}
+.radio-label {
+  margin-top: 10px;
+}
+
+.adress-div {
+  margin-top: 15px;
 }
 
 .buttonForm {

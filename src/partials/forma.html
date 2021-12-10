@@ -4,10 +4,10 @@
 
     <form class="form" autocomplete="on">
       <h2 class="form-titel">Форма заказа торта</h2>
-      <div>
-        <label class="label" for="name">Ваше Имя</label>
+      <div class="input-div conteiner-div">
+        <label class="label label-name" for="name">Ваше Имя</label>
         <input
-          class="input"
+          class="input input-name"
           id="name"
           name="name"
           type="text"
@@ -16,10 +16,10 @@
           autofocus
         />
       </div>
-      <div>
-        <label class="label" for="telefon">Телефон (в формате: 0990098519)</label>
+      <div class="input-div conteiner-div">
+        <label class="label label-name" for="telefon">Телефон</label>
         <input
-          class="input"
+          class="input input-name"
           id="telefon"
           name="telefon"
           type="tel"
@@ -28,15 +28,15 @@
           required
         />
       </div>
-      <div>
+      <div class="conteiner-div">
         <label class="label" for="date">На какую дату и время нужен торт? </label>
         <input class="input input-date" id="date" type="date" name="date" />
         <input class="input input-time" id="time" type="time" name="time" />
-        <script>
+        <!-- <script>
           document.getElementById('date').value = new Date().toISOString().substring(0, 10);
-        </script>
+        </script> -->
       </div>
-      <div>
+      <div class="conteiner-div">
         <label class="label" for="holiday">Какой праздник в этот день? </label>
         <input
           class="input"
@@ -46,7 +46,7 @@
           placeholder="День рождение ребенка 5 лет"
         />
       </div>
-      <div>
+      <div class="conteiner-div">
         <label class="label" for="cake">Какой декор будет на тортике? </label>
         <input
           class="input"
@@ -58,7 +58,7 @@
         <input class="input-file" id="pick" type="file" multiple="multiple" />
       </div>
 
-      <div class="weight">
+      <div class="weight conteiner-div">
         <label for="weight"> Вес торта? (150-200 гр/чел) </label>
         <select id="weight" name="weight" class="weight-input input" required>
           <option>1,5</option>
@@ -72,7 +72,7 @@
           <option>Другой</option>
         </select>
       </div>
-      <div class="filling">
+      <div class="filling conteiner-div">
         <label for="filling"> Начинка торта?</label>
         <select id="filling" name="filling" class="filling-select input" required>
           <option>Неженка</option>
@@ -86,6 +86,25 @@
           <option>Груша - дор блю</option>
           <option>Фисташка-малина</option>
         </select>
+      </div>
+      <div class="radio-button">
+        <label class="radio-label">
+          <input class="radio-input" type="radio" name="delivery" value="pickup" checked />
+          Самовывоз (ул. Дача 55, дом 11)
+        </label>
+        <label class="radio-label">
+          <input class="radio-input" type="radio" name="delivery" value="adress" />
+          Адресная доcтавка (100 грн по Харькову или по тарифу такси)
+        </label>
+      </div>
+      <div class="adress-div">
+        <input
+          class="input input-adress"
+          id="adress"
+          type="text"
+          name="adress"
+          placeholder="Ваш адрес для доставки"
+        />
       </div>
 
       <button class="buttonForm" type="submit">Отправить анкету</button>
